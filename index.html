@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>personal Portfolio Website</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/29184bfd4c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Kritika</span> <br>Gupta from Nagpur</h1>
+
+        </div>
+    </div>
+</div>
+<!-------------about--------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user1.jpeg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-titile">About Me</h1>
+                <p>Motivated and detail-oriented BCCA student with a passion for coding and software development. 
+                    Proficient in Python, HTML, and CSS, with experience in developing Android Studio projects and creating 
+                    responsive web applications. Adept at learning new technologies and applying them to solve practical 
+                    problems.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML, CSS & JavaScript</span><br> Web development</li>
+                            <li><span>Android Development</span><br> App creation, UI design</li>
+                            <li><span>Python DSA & Problem Solving </span><br>Logical thinking, algorithms</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internship Experience</span><br><b>-EdTech App Studio</b> <br>Worked on app development and technology integration using Android Studio. <br>
+                                 Contributed to real-world projects, improving coding and debugging skills.</li>
+                            <li><b>-VaultOfCodes</b><br>Completed a virtual internship at Vault of Codes, gaining hands-on experience in web development and enhancing real-world project
+                                 skills. Worked on live assignments to strengthen coding and design knowledge
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BCCA</span><br> RTMNU University</li>
+                            <li><span>12th(2022) </span><br>M.H. State Board</li>
+                            <li><span>10th(2020)</span><br>M.H. State Board</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------services------------->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-titile">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>web design</h2>
+                <p>I create visually appealing, user-friendly, and fully responsive websites tailored to your brand and goals.</p>
+                     <a href="web-design.html">Learn more</a>
+            </div>
+            
+              
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>I design clean and functional Android app interfaces using XML in Android Studio for basic apps and projects. </p>
+                     <a href="app-design.html">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop"></i>
+                <h2>Personal Portfolio Design</h2>
+                <p>Stand out with a stunning and responsive personal portfolio that showcases your skills, projects, and personality.</p>
+                     <a href="portfolio-design.html">Learn more</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-------------------portfolio-------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-titile">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/service1.jpeg">
+                <div class="layer">
+                    <h3>24*7 Healthcare App</h3>
+                    <p>The Healthcare App developed in Android Studio helps users monitor their health by providing features like symptom tracking, health tips, and appointment reminders. </p>
+                    <a href="https://github.com/kritu08231/Healthcare-app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div> 
+            </div>
+            <div class="work">
+                <img src="images/service2.png">
+                <div class="layer">
+                    <h3>Coffee Shop</h3>
+                    <p>The Bitwise Coffee Shop website serves as the online presence for a local coffee shop, offering a user-friendly platform to explore menu and services</p>
+                    <a href="https://bitwisecoffeeshop.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Python DSA Problem-solving</h3>
+                    <p>Practicing Python DSA problem-solving to strengthen algorithmic thinking and coding efficiency.</p>
+                    <a href="https://github.com/kritu08231"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/kritu08231" class="btn">See More</a>
+
+    </div>
+</div>
+<!-------------------contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-titile">Contact-Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>kritikagupta0605@gmail.com</p>
+                <p> <i class="fa-solid fa-square-phone"></i>7276359351</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61572564263795"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/kritu08231"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/kritikagupta_2904/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/kritika-gupta-b92385220/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="kritika resume (1).pdf" download class="btn btn2" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div> 
+    </div>
+    <div class="copyright">
+        <p>Copyright © Kritika.</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right= "0";
+    }
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw-K5O6pe3N1P4A7CM68wiLPwewytKJ2zO4By4FOMrbWd-ds9PvdC6A5VzbThtPI3fyVA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },3000);
+            form.reset();
+       
+    })
+        .catch(error => console.error('Error!', error.messag))
+})
+
+
+  
+</script>
+</body>
+</html>
